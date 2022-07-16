@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<title>//Candidato</title>
+</head>
+<body>
+
+<div class="container col-4">
+
+		<h2>Cadastro de Candidato</h2>
+	
+		<form action="/app2/cadastrar" method="post">
+	
+			<div class="form-group mt-3">
+				<label>Código</label> 
+				<input type="text" class="form-control"name="id" /> 
+			</div>
+			
+			<div class="form-group mt-3">
+				<label>Nome</label> 
+				<input type="text" class="form-control"name="nome" /> 
+			</div>
+			
+			<div class="form-group mt-3">
+			<label>Sobrenome</label> 
+			<input type="text"  class="form-control" name="sobrenome" /> 
+			</div>
+			
+			<label class="mt-4">Sexo</label>
+	
+			<div class="btn-group">
+				<input type="radio" class="btn-check" name="radioSexo" value="m" checked id="radioMasc"> 
+				<label class="btn btn-outline-secondary" for="radioMasc">Masculino</label>
+	
+				<input type="radio" class="btn-check"name="radioSexo" value="f" id="radioFem">
+				 <label class="btn btn-outline-secondary" for="radioFem">Feminino</label>
+			</div>
+	
+			<br /> <label class="mt-4">Linguagens</label>
+	
+			<div class="btn-group">
+				<input type="checkbox" class="btn-check" name="checkJava" id="check1"> 
+				<label for="check1" class="btn btn-outline-success">Java</label>
+				
+				<input type="checkbox" class="btn-check" name="checkPython" id="check2"> 
+				<label for="check2" class="btn btn-outline-success">Python</label>
+				
+				<input type="checkbox" class="btn-check" name="checkPHP" id="check3"> 
+				<label for="check3" class="btn btn-outline-success">PHP</label>
+				
+				<input type="checkbox" class="btn-check" name="checkSQL" id="check4"> 
+				<label for="check4" class="btn btn-outline-success">SQL</label>		
+			</div>
+			<br/>
+			
+			<label class="mt-4">Onde você mora?</label>
+			<div class="btn-group">
+				<input type="radio" class="btn-check" name= "radioCidade" value="Ponta Grossa" checked id="radioPg">
+				<label for="radioPg" class="btn btn-outline-success">Ponta Grossa</label>
+				
+				<input type="radio" class="btn-check" name= "radioCidade" value="Castro" id="radioCastro">
+				<label for="radioCastro" class="btn btn-outline-success">Castro</label>
+				
+				<input type="radio" class="btn-check" name= "radioCidade" value="Carambeí" id="radioCarambei">
+				<label for="radioCarambei" class="btn btn-outline-success">Carambeí</label>
+			</div>
+			
+			<br/>
+			<button type="submit" class="btn btn-primary mt-4">Enviar</button>
+			<button type="reset" class="btn btn-primary mt-4">Limpar</button>
+	
+	
+	
+		</form>
+
+</div>
+</body>
+</html>
